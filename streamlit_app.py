@@ -1,6 +1,9 @@
 import streamlit
 import pandas
 
+import snowflake.connector
+
+
 
 streamlit.title('My parents new healthy diner')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
@@ -22,5 +25,3 @@ streamlit.write('The user entered ', fruit_choice)
 import requests
 fruityvice_response= requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
 
-
-import snowflake.connector
